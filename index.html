@@ -7,7 +7,46 @@
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  <!-- YOUR CODE HERE -->
+
+  <div class="container">
+    <section class="search">
+      <form id="search-form">
+        <input type="text" id="search-input" placeholder="Enter city name">
+        <button type="submit">Search</button>
+      </form>
+      <div id="search-results"></div>
+    </section>
+  
+    <section class="weather-info">
+      <img id="bg-img" alt="">
+      <h2 id="city"></h2>
+      <h3 id="temperature"></h3>
+    </section>
+  
+    <section class="city-info">
+      <table>
+          <tr>
+            <th>Country</th>
+            <td></td>
+          </tr>
+          <tr>
+            <th>Timezone</th>
+            <td></td>
+          </tr>
+          <tr>
+            <th>Population</th>
+            <td></td>
+          </tr>
+          <tr>
+            <th>Tomorrow's Forecast</th>
+            <td>
+              <span id="forecast-max"></span><br>
+              <span id="forecast-min"></span>
+            </td>
+          </tr>
+        <tbody id="city-info"></tbody>
+      </table>
+    </section>
   
   <script src="./app.js"></script>
 </body>
